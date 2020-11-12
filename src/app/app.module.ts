@@ -18,6 +18,8 @@ import { NgIfComponent } from './ng-if/ng-if.component';
 import { CommonModule } from '@angular/common';
 import { NgIfOverComponent } from './ng-if-over/ng-if-over.component';
 import { NgForAvengersComponent } from './ng-for-avengers/ng-for-avengers.component';
+import { NgForInputGalleryComponent } from './ng-for-input-gallery/ng-for-input-gallery.component';
+import { NgForInputPersonComponent } from './ng-for-input-person/ng-for-input-person.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { NgForAvengersComponent } from './ng-for-avengers/ng-for-avengers.compon
     InputPersonComponent,
     NgIfComponent,
     NgIfOverComponent,
-    NgForAvengersComponent
+    NgForAvengersComponent,
+    NgForInputGalleryComponent,
+    NgForInputPersonComponent
   ],
   imports: [
     BrowserModule,
