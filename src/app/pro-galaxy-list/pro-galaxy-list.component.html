@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Planeta</th>
+            <th>Superficie</th>
+            <th>Gravedad</th>
+            <th>Distancia con respecto al sol</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let planet of galaxyList; let index = index">
+            <td width="150"> <img src="{{planet.imgUrl}}" alt="{{planet.name}}"></td>
+            <td>{{planet.name}}</td>
+            <td>{{planet.surface}}</td>
+            <td>{{planet.gravity}}</td>
+            <td>{{planet.distance}}</td>
+            <td><button (click)="removePlanet(index)">X</button></td>
+        </tr>
+    </tbody>
+</table>

@@ -20,6 +20,11 @@ import { NgIfOverComponent } from './ng-if-over/ng-if-over.component';
 import { NgForAvengersComponent } from './ng-for-avengers/ng-for-avengers.component';
 import { NgForInputGalleryComponent } from './ng-for-input-gallery/ng-for-input-gallery.component';
 import { NgForInputPersonComponent } from './ng-for-input-person/ng-for-input-person.component';
+import { OutputButtonComponent } from './output-button/output-button.component';
+import { ProMatchComponent } from './pro-match/pro-match.component';
+import { ProMatchListComponent } from './pro-match-list/pro-match-list.component';
+import { ProGalaxyComponent } from './pro-galaxy/pro-galaxy.component';
+import { ProGalaxyListComponent } from './pro-galaxy-list/pro-galaxy-list.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +44,12 @@ import { NgForInputPersonComponent } from './ng-for-input-person/ng-for-input-pe
     NgIfOverComponent,
     NgForAvengersComponent,
     NgForInputGalleryComponent,
-    NgForInputPersonComponent
+    NgForInputPersonComponent,
+    OutputButtonComponent,
+    ProMatchComponent,
+    ProMatchListComponent,
+    ProGalaxyComponent,
+    ProGalaxyListComponent
   ],
   imports: [
     BrowserModule,

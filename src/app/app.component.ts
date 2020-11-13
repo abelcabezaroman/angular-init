@@ -51,4 +51,12 @@ export class AppComponent {
       role: 'Escudero'
     }
   ]
+
+  alertMeFather(msg){
+    console.log('Aviso padre ' + msg);
+  }
+
+  alertMeDblFather(msg){
+    console.log('Aviso padre doble ' + msg);
+  }
 }
