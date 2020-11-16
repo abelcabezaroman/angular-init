@@ -25,6 +25,11 @@ import { ProMatchComponent } from './pro-match/pro-match.component';
 import { ProMatchListComponent } from './pro-match-list/pro-match-list.component';
 import { ProGalaxyComponent } from './pro-galaxy/pro-galaxy.component';
 import { ProGalaxyListComponent } from './pro-galaxy-list/pro-galaxy-list.component';
+import { NgModelComponent } from './ng-model/ng-model.component';
+import { FormsModule } from '@angular/forms';
+import { ProToDoComponent } from './pro-to-do/pro-to-do.component';
+import { ProToDoListComponent } from './pro-to-do-list/pro-to-do-list.component';
+import { ProToDoFormComponent } from './pro-to-do-form/pro-to-do-form.component';
 
 @NgModule({
   declarations: [
@@ -49,12 +54,17 @@ import { ProGalaxyListComponent } from './pro-galaxy-list/pro-galaxy-list.compon
     ProMatchComponent,
     ProMatchListComponent,
     ProGalaxyComponent,
-    ProGalaxyListComponent
+    ProGalaxyListComponent,
+    NgModelComponent,
+    ProToDoComponent,
+    ProToDoListComponent,
+    ProToDoFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
