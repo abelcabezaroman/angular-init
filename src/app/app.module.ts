@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { ProToDoComponent } from './pro-to-do/pro-to-do.component';
 import { ProToDoListComponent } from './pro-to-do-list/pro-to-do-list.component';
 import { ProToDoFormComponent } from './pro-to-do-form/pro-to-do-form.component';
+import { ProMatchFormComponent } from './pro-match-form/pro-match-form.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { ProToDoFormComponent } from './pro-to-do-form/pro-to-do-form.component'
     NgModelComponent,
     ProToDoComponent,
     ProToDoListComponent,
-    ProToDoFormComponent
+    ProToDoFormComponent,
+    ProMatchFormComponent
   ],
   imports: [
     BrowserModule,

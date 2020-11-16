@@ -35,8 +35,12 @@ export class ProMatchComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removePlanet(index){
-    this.matchList.splice(index,1)
+  removeMatch(index) {
+    this.matchList.splice(index, 1)
+  }
+
+  addMatch(newMatch) {
+    this.matchList.push(newMatch);
   }
 
 
