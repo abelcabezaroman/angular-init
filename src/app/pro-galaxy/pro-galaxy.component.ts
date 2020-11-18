@@ -47,4 +47,8 @@ export class ProGalaxyComponent implements OnInit {
     this.galaxyList.splice(index,1)
   }
 
+  addPlanet(newPlanet){
+    this.galaxyList.push(newPlanet)
+  }
+
 }

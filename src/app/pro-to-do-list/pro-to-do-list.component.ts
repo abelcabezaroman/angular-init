@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pro-to-do-list',
@@ -12,5 +12,6 @@ export class ProToDoListComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

@@ -1,5 +1,5 @@
-<ul>
-    <li *ngFor="let toDo of toDoList">
-        {{toDo}}
+<ul>.
+    <li *ngFor="let toDo of toDoList" [ngClass]="{'b-is-done': toDo.isDone, 'b-not-done': !toDo.isDone}">
+        <input type="checkbox" [(ngModel)]="toDo.isDone"> {{toDo.task}}
     </li>
 </ul>

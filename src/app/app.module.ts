@@ -30,6 +30,7 @@ import { FormsModule } from '@angular/forms';
 import { ProToDoComponent } from './pro-to-do/pro-to-do.component';
 import { ProToDoListComponent } from './pro-to-do-list/pro-to-do-list.component';
 import { ProToDoFormComponent } from './pro-to-do-form/pro-to-do-form.component';
+import { ProGalaxyFormComponent } from './pro-galaxy-form/pro-galaxy-form.component';
 import { ProMatchFormComponent } from './pro-match-form/pro-match-form.component';
 
 @NgModule({
@@ -56,6 +57,7 @@ import { ProMatchFormComponent } from './pro-match-form/pro-match-form.component
     ProMatchListComponent,
     ProGalaxyComponent,
     ProGalaxyListComponent,
+    ProGalaxyFormComponent,
     NgModelComponent,
     ProToDoComponent,
     ProToDoListComponent,

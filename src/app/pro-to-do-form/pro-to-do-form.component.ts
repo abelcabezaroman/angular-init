@@ -10,6 +10,7 @@ export class ProToDoFormComponent implements OnInit {
   newTask: string;
 
   @Output() addNewTaskEmitter = new EventEmitter();
+  @Output() removeCompletedTasksEmitter = new EventEmitter();
 
   constructor() { }
 
@@ -19,6 +20,11 @@ export class ProToDoFormComponent implements OnInit {
   addNewTaskEmit(){
     this.addNewTaskEmitter.emit(this.newTask);
     this.newTask = '';
+  }
+
+  
+  removeCompletedTasks(){
+    this.removeCompletedTasksEmitter.emit();
   }
 
 }
