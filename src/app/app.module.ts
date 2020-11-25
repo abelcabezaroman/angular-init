@@ -32,6 +32,8 @@ import { ProToDoListComponent } from './pro-to-do-list/pro-to-do-list.component'
 import { ProToDoFormComponent } from './pro-to-do-form/pro-to-do-form.component';
 import { ProGalaxyFormComponent } from './pro-galaxy-form/pro-galaxy-form.component';
 import { ProMatchFormComponent } from './pro-match-form/pro-match-form.component';
+import { NgContainerComponent } from './ng-container/ng-container.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { ProMatchFormComponent } from './pro-match-form/pro-match-form.component
     ProToDoComponent,
     ProToDoListComponent,
     ProToDoFormComponent,
-    ProMatchFormComponent
+    ProMatchFormComponent,
+    NgContainerComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,
