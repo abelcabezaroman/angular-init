@@ -1,0 +1,3 @@
+<ul>
+    <li *ngFor="let student of students" [ngClass]="{'red': student.score < 5, 'blue': student.score >=5 && student.score <= 7, 'green': student.score > 7}">{{student.name}} {{student.score}}</li>
+</ul>

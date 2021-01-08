@@ -14,6 +14,15 @@ import { OverAgeComponent } from './exercises/exercise-4/over-age/over-age.compo
 import { NgForComponent } from './components/ng-for/ng-for.component';
 import { CountriesListComponent } from './exercises/exercise-5/countries-list/countries-list.component';
 import { CountriesFilteredListComponent } from './exercises/exercise-6/countries-filtered-list/countries-filtered-list.component';
+import { InputImgComponent } from './exercises/exercise-3/input-img/input-img.component';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgClassScoreComponent } from './exercises/exercise-7/ng-class-score/ng-class-score.component';
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { ColorBallComponent } from './exercises/exercise-8/color-ball/color-ball.component';
+import { ButtonClickComponent } from './components/button-click/button-click.component';
+import { ThiefsComponent } from './exercises/exercise-9/thiefs/thiefs.component';
+import { OutputFatherComponent } from './components/output-father/output-father.component';
+import { OutputBabyComponent } from './components/output-baby/output-baby.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +37,16 @@ import { CountriesFilteredListComponent } from './exercises/exercise-6/countries
     OverAgeComponent,
     NgForComponent,
     CountriesListComponent,
-    CountriesFilteredListComponent
+    CountriesFilteredListComponent,
+    InputImgComponent,
+    NgClassComponent,
+    NgClassScoreComponent,
+    NgStyleComponent,
+    ColorBallComponent,
+    ButtonClickComponent,
+    ThiefsComponent,
+    OutputFatherComponent,
+    OutputBabyComponent
   ],
   imports: [
     BrowserModule,

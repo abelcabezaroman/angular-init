@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'new-angular-project';
   name: string = 'Abel';
   imgUrl: string = 'https://www.staticjbx.com/images/blog/82697/82697_desktop_e9b93358950b49e6ace0c6abdee5368d_photo.jpg'
-  
+
   card1 = {
     title: 'Soy un titulo molon',
     imgUrl: 'https://www.ef.com/sitecore/__/~/media/universal/pg/8x5/destination/US_US-NY_NYC_1.jpg',
@@ -31,4 +31,30 @@ export class AppComponent {
     { name: 'Venezuela', population: 30000000 },
     { name: 'Indonesia', population: 20000000 }
   ];
+
+  students1 = [
+    { name: 'Julia', score: 9 },
+    { name: 'Pedro', score: 8 },
+    { name: 'Samuel', score: 4 },
+    { name: 'Luis', score: 10 },
+    { name: 'Alejandro', score: 7 },
+    { name: 'Lucia', score: 2 },
+  ];
+
+  students2 = [
+    { name: 'Samantha', score: 4 },
+    { name: 'Luisa', score: 9 },
+    { name: 'Andres', score: 5 },
+    { name: 'Juan', score: 6 },
+    { name: 'Calamardo', score: 2 },
+    { name: 'Bob', score: 5 },
+  ];
+
+  persons = [
+    { name: 'Paco', isThief: false },
+    { name: 'Paloma', isThief: true },
+    { name: 'Juana', isThief: false },
+    { name: 'Alfredo', isThief: false },
+    { name: 'Ramiro', isThief: true },
+  ]
 }

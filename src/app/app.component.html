@@ -21,27 +21,57 @@
 <app-input-card [card]="card1"></app-input-card>
 <app-input-card [card]="card2"></app-input-card>
 
+<!-- EXERCISE 3 -->
+<app-input-img
+  [imgSrc]="'https://cdn.wallpaperhi.com/1366x768/20120522/boobs%20code%20geass%20bra%20glasses%20cornelia%20li%20britannia%20purple%20hair%20books%20lamperouge%20lelouch%20meganekko%20pu_www.wallpaperhi.com_79.jpg'"
+  [imgAlt]="'Code geass'"></app-input-img>
+<!-- FIN EXERCISE 3 -->
+
 <app-ng-if></app-ng-if>
 
 <!-- EXERCISE 4 -->
-
 <app-over-age [person]="{name: 'Sara', age: 19}"></app-over-age>
 <app-over-age [person]="{name: 'Lorenzo', age: 16}"></app-over-age>
 <app-over-age [person]="{name: 'Luffy', age: 25}"></app-over-age>
-
 <!-- FIN EXERCISE 4 -->
 
 <app-ng-for></app-ng-for>
 
-
 <!-- EXERCISE 5 -->
-
 <app-countries-list [countries]="['Japón', 'España', 'Italia', 'Venezuela', 'Indonesia']"></app-countries-list>
-
 <!-- FIN EXERCISE 5 -->
 
 <!-- EXERCISE 6 -->
-
 <app-countries-filtered-list [countries]="countries"></app-countries-filtered-list>
-
 <!-- FIN EXERCISE 6 -->
+
+
+<app-ng-class></app-ng-class>
+
+<!-- EXERCISE 7 -->
+<app-ng-class-score [students]="students1"></app-ng-class-score>
+<app-ng-class-score [students]="students2"></app-ng-class-score>
+<!-- FIN EXERCISE 7 -->
+
+<app-ng-style [color]="'red'"></app-ng-style>
+<app-ng-style [color]="'blue'"></app-ng-style>
+<app-ng-style [color]="'green'"></app-ng-style>
+
+
+<!-- EXERCISE 8 -->
+<app-color-ball [color]="'#65DEF1'"></app-color-ball>
+<app-color-ball [color]="'#A8DCD1'"></app-color-ball>
+<app-color-ball [color]="'#DCE2C8'"></app-color-ball>
+<app-color-ball [color]="'#F96900'"></app-color-ball>
+<app-color-ball [color]="'#F17F29'"></app-color-ball>
+<!-- FIN EXERCISE 8 -->
+
+<div>
+  <app-button-click></app-button-click>
+</div>
+
+<!-- EXERCISE 9 -->
+<app-thiefs [persons]="persons"></app-thiefs>
+<!-- FIN EXERCISE 9 -->
+
+<app-output-father></app-output-father>
