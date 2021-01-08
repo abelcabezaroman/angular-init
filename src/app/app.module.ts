@@ -23,6 +23,10 @@ import { ButtonClickComponent } from './components/button-click/button-click.com
 import { ThiefsComponent } from './exercises/exercise-9/thiefs/thiefs.component';
 import { OutputFatherComponent } from './components/output-father/output-father.component';
 import { OutputBabyComponent } from './components/output-baby/output-baby.component';
+import { NgModelComponent } from './components/ng-model/ng-model.component';
+import { FormsModule } from '@angular/forms';
+import { ProMatchComponent } from './exercises/exercise-10/pro-match/pro-match.component';
+import { ProMatchListComponent } from './exercises/exercise-10/pro-match-list/pro-match-list.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +50,15 @@ import { OutputBabyComponent } from './components/output-baby/output-baby.compon
     ButtonClickComponent,
     ThiefsComponent,
     OutputFatherComponent,
-    OutputBabyComponent
+    OutputBabyComponent,
+    NgModelComponent,
+    ProMatchComponent,
+    ProMatchListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -16,7 +16,7 @@ export class OutputBabyComponent implements OnInit {
 
   iWantEat(){
     console.log('Muah muah!');
-    this.iWantEatEmitter.emit();
+    this.iWantEatEmitter.emit('Quiero comer!');
   }
 
 }

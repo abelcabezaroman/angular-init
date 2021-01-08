@@ -12,7 +12,8 @@ export class OutputFatherComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  feedBaby() {
+  feedBaby($event) {
+    console.log($event);
     console.log('Dando de comer');
   }
 
