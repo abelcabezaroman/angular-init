@@ -1,0 +1,2 @@
+Crea un componente llamado countries-list al cual le pases como ``Input`` un array con el siguiente valor
+``['Japón', 'España', 'Italia', 'Venezuela', 'Indonesia']``. Utiliza ``*ngFor`` para mostrar en una lista los nombres de los paises.

@@ -1,47 +1,47 @@
 <app-hello-world></app-hello-world>
 <app-button></app-button>
-
 <app-card></app-card>
 
-<app-variable></app-variable>
+<div>
+  <p>Yo soy {{name}}</p>
+  <img src="{{imgUrl}}" alt="">
+</div>
 
-<app-ng-class></app-ng-class>
-
-<app-ng-class-fruits></app-ng-class-fruits>
-
-<app-input-button [text]="'Cancel'"></app-input-button>
-<app-input-button [text]="'Send'"></app-input-button>
-<app-input-button [text]="'click me'"></app-input-button>
 <app-input-button></app-input-button>
+<app-input-button [text]="'Cancel'"></app-input-button>
+<app-input-button [text]="'Enviar'"></app-input-button>
+<app-input-button [text]="6"></app-input-button>
+<app-input-button [text]="true"></app-input-button>
+<app-input-button [text]="name"></app-input-button>
 
-<app-ng-content>Juan</app-ng-content>
-<app-ng-container></app-ng-container>
+<app-input-hello-world [name]="'Abel'"></app-input-hello-world>
+<app-input-hello-world [name]="'Gabriel'"></app-input-hello-world>
+<app-input-hello-world [name]="'Samantha'"></app-input-hello-world>
 
-
-<app-input-img [imgAlt]="'Cat image'" [imgSrc]="'https://product-image.juniqe-production.juniqe.com/media/catalog/product/seo-cache/x800/18/29/18-29-101L/Cat-Laura-Graves-Poster.jpg'"></app-input-img>
-
-<app-ng-style></app-ng-style>
-
-<app-ng-style-ball [color]="'#ddf3f5'"></app-ng-style-ball>
-<app-ng-style-ball [color]="'#a6dcef'"></app-ng-style-ball>
-<app-ng-style-ball [color]="'#f2aaaa'"></app-ng-style-ball>
-<app-ng-style-ball [color]="'#e36387'"></app-ng-style-ball>
-
-<app-input-person [infoPerson]="{name: 'Abel Cabeza Román', age: 99, role: 'Profesor'}"></app-input-person>
+<app-input-card [card]="card1"></app-input-card>
+<app-input-card [card]="card2"></app-input-card>
 
 <app-ng-if></app-ng-if>
-<app-ng-if-over></app-ng-if-over>
 
-<app-ng-for-input-gallery [galleryList]="ngForGalleryList"></app-ng-for-input-gallery>
+<!-- EXERCISE 4 -->
 
-<app-ng-for-input-person [personList]="ngForPersonList"></app-ng-for-input-person>
+<app-over-age [person]="{name: 'Sara', age: 19}"></app-over-age>
+<app-over-age [person]="{name: 'Lorenzo', age: 16}"></app-over-age>
+<app-over-age [person]="{name: 'Luffy', age: 25}"></app-over-age>
 
-<app-output-button (dblClickEmitter)="alertMeDblFather($event)" (clickEmitter)="alertMeFather($event)"></app-output-button>
+<!-- FIN EXERCISE 4 -->
 
-<app-pro-match></app-pro-match>
-<app-pro-galaxy></app-pro-galaxy>
+<app-ng-for></app-ng-for>
 
-<app-ng-model></app-ng-model>
 
-<app-pro-to-do></app-pro-to-do>
+<!-- EXERCISE 5 -->
 
+<app-countries-list [countries]="['Japón', 'España', 'Italia', 'Venezuela', 'Indonesia']"></app-countries-list>
+
+<!-- FIN EXERCISE 5 -->
+
+<!-- EXERCISE 6 -->
+
+<app-countries-filtered-list [countries]="countries"></app-countries-filtered-list>
+
+<!-- FIN EXERCISE 6 -->

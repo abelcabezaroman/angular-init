@@ -1,62 +1,34 @@
 import { Component } from '@angular/core';
 
-interface GalleryList{
-  imgUrl: string;
-  title: string
-}
-
-interface Person{
-  name: string;
-  age: number;
-  role: string
-}
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-to-destroy';
+  title = 'new-angular-project';
+  name: string = 'Abel';
+  imgUrl: string = 'https://www.staticjbx.com/images/blog/82697/82697_desktop_e9b93358950b49e6ace0c6abdee5368d_photo.jpg'
+  
+  card1 = {
+    title: 'Soy un titulo molon',
+    imgUrl: 'https://www.ef.com/sitecore/__/~/media/universal/pg/8x5/destination/US_US-NY_NYC_1.jpg',
+    pText: 'Soy un parrafo de prueba mira como me muestro por aqui y por allá',
+    buttonText: 'Visitar',
+  };
 
-  ngForGalleryList: GalleryList[] = [
-    {
-      imgUrl: 'https://www.elagoradiario.com/wp-content/uploads/2020/06/Retrato-corto-de-una-peque%C3%B1a-nutria-asi%C3%A1tica-u-oriental-Aonyx-cinerea-Gary-Perkin-1024x683.jpg',
-      title: 'Titulo de prueba'
-    },
-    {
-      imgUrl: 'https://www.elagoradiario.com/wp-content/uploads/2020/06/Retrato-corto-de-una-peque%C3%B1a-nutria-asi%C3%A1tica-u-oriental-Aonyx-cinerea-Gary-Perkin-1024x683.jpg',
-      title: 'Titulo de prueba'
-    },
-    {
-      imgUrl: 'https://www.elagoradiario.com/wp-content/uploads/2020/06/Retrato-corto-de-una-peque%C3%B1a-nutria-asi%C3%A1tica-u-oriental-Aonyx-cinerea-Gary-Perkin-1024x683.jpg',
-      title: 'Titulo de prueba'
-    }
-  ]
-
-  ngForPersonList: Person[] = [
-    {
-      name: 'Abel Cabeza Román',
-      age: 99,
-      role: 'Profesor'
-    },
-    {
-      name: 'Don Quijote',
-      age: 460,
-      role: 'Caballero'
-    },
-    {
-      name: 'Sancho Panza',
-      age: 454,
-      role: 'Escudero'
-    }
-  ]
-
-  alertMeFather(msg){
-    console.log('Aviso padre ' + msg);
+  card2 = {
+    title: 'Este sitio Bali mucho',
+    imgUrl: 'https://viajes.nationalgeographic.com.es/medio/2019/01/30/lkf-339485_fbe9d139_1200x630.jpg',
+    pText: 'Soy un parrafo de prueba mira como me muestro por aqui y por allá',
+    buttonText: 'Baliando',
   }
 
-  alertMeDblFather(msg){
-    console.log('Aviso padre doble ' + msg);
-  }
+  countries = [
+    { name: 'Japón', population: 90000000 },
+    { name: 'España', population: 40000000 },
+    { name: 'Italia', population: 50000000 },
+    { name: 'Venezuela', population: 30000000 },
+    { name: 'Indonesia', population: 20000000 }
+  ];
 }

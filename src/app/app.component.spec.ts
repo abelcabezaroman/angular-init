@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-to-destroy'`, () => {
+  it(`should have as title 'new-angular-project'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-to-destroy');
+    expect(app.title).toEqual('new-angular-project');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-to-destroy app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('new-angular-project app is running!');
   });
 });

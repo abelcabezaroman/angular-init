@@ -1,0 +1,13 @@
+<h4>Paises con más de 3000000 habitantes</h4>
+<ul>
+    <ng-container *ngFor="let country of countries">
+        <li *ngIf="country.population > 30000000">{{country.name}}</li>
+    </ng-container>
+</ul>
+
+<h4>Paises con menos o igual de 3000000 habitantes</h4>
+<ul>
+    <ng-container *ngFor="let country of countries">
+        <li *ngIf="country.population <= 30000000">{{country.name}}</li>
+    </ng-container>
+</ul>
