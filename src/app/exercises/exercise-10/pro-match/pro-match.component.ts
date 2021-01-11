@@ -29,14 +29,29 @@ export class ProMatchComponent implements OnInit {
       score: '3-1'
     }
   ];
-  
+
+  filterText;
+
+  filteredMatches = this.matches;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  removeMatch(index){
+  removeMatch(index) {
     this.matches.splice(index, 1);
+    this.filterMatch(this.filterText);
+  }
+
+  addMatch(newMatch) {
+    this.matches.push(newMatch);
+    this.filterMatch(this.filterText);
+  }
+
+  filterMatch(textToFilter) {
+    this.filterText = textToFilter;
+    this.filteredMatches = this.matches.filter(match => match.team1.toLowerCase().includes(this.filterText.toLowerCase()) || match.team2.toLowerCase().includes(this.filterText.toLowerCase()))
   }
 
 }

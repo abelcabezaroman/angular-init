@@ -27,6 +27,10 @@ import { NgModelComponent } from './components/ng-model/ng-model.component';
 import { FormsModule } from '@angular/forms';
 import { ProMatchComponent } from './exercises/exercise-10/pro-match/pro-match.component';
 import { ProMatchListComponent } from './exercises/exercise-10/pro-match-list/pro-match-list.component';
+import { ProMatchFormComponent } from './exercises/exercise-10/pro-match-form/pro-match-form.component';
+import { ProMatchFilterComponent } from './exercises/exercise-10/pro-match-filter/pro-match-filter.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
+import { NgContainerComponent } from './components/ng-container/ng-container.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +57,11 @@ import { ProMatchListComponent } from './exercises/exercise-10/pro-match-list/pr
     OutputBabyComponent,
     NgModelComponent,
     ProMatchComponent,
-    ProMatchListComponent
+    ProMatchListComponent,
+    ProMatchFormComponent,
+    ProMatchFilterComponent,
+    NgContentComponent,
+    NgContainerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<form>
+    <input type="text" name="team1" [(ngModel)]="newMatch.team1" placeholder="Equipo 1">
+    <input type="text" name="team2" [(ngModel)]="newMatch.team2" placeholder="Equipo 2">
+    <input type="text" name="score" [(ngModel)]="newMatch.score" placeholder="Resultado">
+
+    <button (click)="addMatchEmit()">Añadir</button>
+</form>

@@ -12,7 +12,8 @@ export class ButtonClickComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clicked(){
+  clicked($event){
+    console.log($event);
     console.log('He sido clickado');
   }
 

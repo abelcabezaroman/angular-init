@@ -57,4 +57,5 @@ export class AppComponent {
     { name: 'Alfredo', isThief: false },
     { name: 'Ramiro', isThief: true },
   ]
+
 }
